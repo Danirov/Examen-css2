@@ -1,0 +1,269 @@
+#contenido{
+	margin: auto;
+    width: 900px;
+    font-family: "Dancing Script",cursive;
+            }
+
+header {
+	background: #5b7989;
+	border-radius: 10px;
+    color:  white;
+    text-align: left;
+    padding: 10px 5px;
+    text-shadow: 2px 2px #02010a;
+    animation: slide 1s 
+
+	}
+@-webkit-keyframes slide {
+0%	{margin-top: 160%;}
+60%	{margin-top: -5%;}
+100% {margin-top: 0%;}
+}
+
+body
+{
+	background-color: #02010a;
+}
+nav{
+	text-align: right;
+	margin-top: -5%;
+	padding-right: 15px;
+
+}
+
+nav a{
+	color:white;
+    text-decoration: none;
+    word-spacing: .5em;
+                 
+}
+
+
+.Cataratas{
+	background-color: #82c3a6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 5px ;
+    width: 100%;
+
+
+}
+
+#dos {
+    display: flex;
+    flex-direction: column;
+    background-color: #d5c75f;
+}
+
+.alinear{
+    display: flex;
+    flex-direction: row ;
+}
+
+.til{
+	border: 1px solid black;
+}
+.purma{
+	border: 1px solid black;
+
+<!--Efectos de las primeras fotos en el index--> 
+
+.rotate{
+transform: rotateZ(none);
+transition: rotatez, 1s;
+}
+.rotate:hover{
+transform: rotateZ(10deg);
+animation: animantionShadow 1s;
+animation-fill-mode: forwards;
+box-shadow: 2px 2px 2px #82c3a6;
+}
+
+.translate{
+transform: translate(0, 0);
+transition: traslate, 1s;
+}
+.translate:hover{
+transform: translate(20px, -5px);
+animation: animantionShadow 1s;
+animation-fill-mode: forwards;
+box-shadow: 2px 2px 2px #82c3a6
+}
+
+/* Se aplicaron dos efectos  en el index*/
+
+
+}
+
+footer{
+	background-color: #C6d5c5;
+    width: 900px;
+    margin: auto;
+    color: black;
+    border-radius: 0 0 10px 10px;
+    padding: 15px 0px ;
+}
+
+footer{
+	display: flex;
+    flex-direction: column;
+}
+
+.contacto{
+	display: flex;
+    flex-flow: row;
+}
+
+footer .columna{
+	width: 100%;
+    text-align:center;
+    font-size: 100%;
+}
+
+/*Estilos de Paisajes y Retratos*/
+
+.prueba{
+background: #d5c75f
+}
+#paisajes{
+display: flex;
+flex-direction: row;
+}
+.prueba img {
+  width: 100%;
+}
+#paisajes2 {
+display: flex;
+flex-direction: row;
+
+}
+
+.imagen1{
+	-webkit-filter:blur (10px);
+	-moz-filter:blur(10px);
+	filter:blur(10px);
+}
+.imagen3{
+	-webkit-filter: sepia (90%);
+	-moz-filter:sepia (90%);
+	filter: sepia(90%);
+}
+
+.imagen2, .imagen4, .imagen6{
+-webkit-filter:grayscale(100%);
+-moz-filter:grayscale(100%);
+filter:grayscale(100%);
+}
+
+/*Medias queries*/
+
+@media screen (max-width:420px)  {
+img{width: 80%}	
+
+  
+  header{
+    font-size: 80%;
+    text-align: center;
+  }
+
+  #contenido{
+  	width: 100%
+  }
+
+  .cataratas{
+  	width: 120%;
+  	display: block;
+  }
+
+  .alinear{
+  	width: 100%;
+  	display:block;
+  }
+
+  nav{
+  width: 100%;
+  font-size: 100%;
+  text-align: center;
+  margin-top: auto;
+}
+
+nav a{
+  width: auto;
+
+}
+
+footer{
+	width: 100%;
+	text-align: center;
+	font-size:100%;
+}
+
+.contacto{
+	display: block;
+	width: auto;
+}
+.prueba #paisajes{
+display: block;
+width: 100%
+
+}
+.prueba #paisajes2{
+display: block;
+width: 100%;
+}
+
+
+}
+@media (max-width:900px){  
+  img{
+    width: 100%
+  }
+  
+
+  header{
+    font-size: 90%;
+    text-align: center;
+  }
+  #contenido{
+  	width: 100%
+  }
+  .cataratas{
+  	width: 120%;
+  	display: block;
+  }
+  .alinear{
+  	width: 100%;
+  	display:block;
+  }
+  nav{
+  width: 100%;
+  font-size: 100%;
+  text-align: center;
+  margin-top: auto;
+}
+nav a{
+  width: auto;
+
+}
+footer{
+	width: 100%;
+	text-align: center;
+	font-size:100%;
+}
+.contacto{
+	display: block;
+	width: auto;
+}
+.prueba #paisajes{
+display: block;
+width: 100%
+
+}
+.prueba #paisajes2{
+display: block;
+width: 100%;
+}
+
+
+}
